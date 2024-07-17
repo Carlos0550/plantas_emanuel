@@ -1,0 +1,80 @@
+/* Contenedor de la barra de navegación */
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 9;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 2rem;
+    background: rgba( 65, 65, 65, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position:fixed;
+    top: 0;
+  }
+  
+    .nav__logo{
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        border-radius: 2rem;
+        object-fit: contain;
+    }   
+  .nav__logo img {
+    max-height: 70px;
+    max-width: 70px;
+  }
+  
+  /* Estilos para la lista de navegación */
+  .nav ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Estilos para los elementos de la lista */
+  .nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  /* Estilos para los enlaces */
+  .nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 550;
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul li a:hover {
+    color: #f06090;
+  }
+
+  @media(max-width:768px){
+    .nav__logo img{
+        display: none;
+    }
+  }
+  
+
+  
